@@ -19,11 +19,10 @@
         }
         class ZadachaManyStepsProceses
         {
-            TreeNode[] Nodes;
+            TreeGraph Graph;
             public ZadachaManyStepsProceses(int[,] MasVersh /*Массив отношений вершин*/)
             {
-                Nodes = new TreeNode[MasVersh.GetLength(0)]; //Создаём массив на введённое количество вершин
-                
+                Graph = new TreeGraph(MasVersh); //Создаём массив на введённое количество вершин
             }
         }
     }

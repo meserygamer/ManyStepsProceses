@@ -15,6 +15,7 @@ namespace ManyStepsProceses
         {
             this.MatrixPaths = MatrixPaths;
             TreeNodes = new TreeNode[MatrixPaths.GetLength(0)];
+            FormGraph();
         }
         private void FormGraph() //Создаёт узлы графа
         {

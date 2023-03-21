@@ -23,6 +23,14 @@
             public ZadachaManyStepsProceses(int[,] MasVersh /*Массив отношений вершин*/)
             {
                 Graph = new TreeGraph(MasVersh); //Создаём массив на введённое количество вершин
+                List<int> list = new List<int>();
+                Graph.sformMarsh(Graph.FirstNode(), list);
+                Console.Write("Маршрут ");
+                foreach(var i in list)
+                {
+                    Console.Write($"{i} ");
+                }
+                Console.WriteLine($"\nДлинна маршрута: {Graph.FirstNode().OptimalPath}");
             }
         }
     }

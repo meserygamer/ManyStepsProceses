@@ -23,6 +23,13 @@
             public ZadachaManyStepsProceses(int[,] MasVersh /*Массив отношений вершин*/)
             {
                 Graph = new TreeGraph(MasVersh); //Создаём массив на введённое количество вершин
+                List<int> minWay;
+                Console.WriteLine($"Длмнна кротчайшего маршрута: {Graph.FindMinWay(out minWay)}");
+                Console.Write("Кротчайший маршрут: ");
+                foreach(var i in minWay)
+                {
+                    Console.Write($"{i} ");
+                }
             }
         }
     }
